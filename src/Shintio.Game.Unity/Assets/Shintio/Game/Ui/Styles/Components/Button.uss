@@ -1,0 +1,8 @@
+:root {
+}
+
+.s-btn {
+    background-color: var(--s-theme-surface);
+    color: var(--s-theme-on-surface);
+    height: 64px;
+}

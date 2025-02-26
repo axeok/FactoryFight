@@ -1,0 +1,3 @@
+[submodule "libs/Shintio.Net"]
+	path = libs/Shintio.Net
+	url = https://github.com/axeok/Shintio.Net.git

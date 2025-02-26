@@ -1,0 +1,24 @@
+﻿$colors: (
+        'background',
+        'surface',
+        'surface-light',
+        'surface-bright',
+        'surface',
+        'primary',
+        'secondary',
+        'disabled',
+        'success',
+        'warning',
+        'error',
+        'info',
+);
+
+@each $name in $colors {
+  $background: var(--s-theme-#{$name});
+  $color: var(--s-theme-on-#{$name});
+
+  .bg-#{$name} {
+    background-color: $background;
+    color: $color;
+  }
+}

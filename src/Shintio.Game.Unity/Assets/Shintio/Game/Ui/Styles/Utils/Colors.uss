@@ -1,0 +1,59 @@
+.bg-background {
+  background-color: var(--s-theme-background);
+  color: var(--s-theme-on-background);
+}
+
+.bg-surface {
+  background-color: var(--s-theme-surface);
+  color: var(--s-theme-on-surface);
+}
+
+.bg-surface-light {
+  background-color: var(--s-theme-surface-light);
+  color: var(--s-theme-on-surface-light);
+}
+
+.bg-surface-bright {
+  background-color: var(--s-theme-surface-bright);
+  color: var(--s-theme-on-surface-bright);
+}
+
+.bg-surface {
+  background-color: var(--s-theme-surface);
+  color: var(--s-theme-on-surface);
+}
+
+.bg-primary {
+  background-color: var(--s-theme-primary);
+  color: var(--s-theme-on-primary);
+}
+
+.bg-secondary {
+  background-color: var(--s-theme-secondary);
+  color: var(--s-theme-on-secondary);
+}
+
+.bg-disabled {
+  background-color: var(--s-theme-disabled);
+  color: var(--s-theme-on-disabled);
+}
+
+.bg-success {
+  background-color: var(--s-theme-success);
+  color: var(--s-theme-on-success);
+}
+
+.bg-warning {
+  background-color: var(--s-theme-warning);
+  color: var(--s-theme-on-warning);
+}
+
+.bg-error {
+  background-color: var(--s-theme-error);
+  color: var(--s-theme-on-error);
+}
+
+.bg-info {
+  background-color: var(--s-theme-info);
+  color: var(--s-theme-on-info);
+}

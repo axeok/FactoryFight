@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:editor="UnityEditor.UIElements" xmlns:engine="UnityEngine.UIElements" xmlns="Kamgam.UIToolkitGlow" elementFormDefault="qualified" targetNamespace="Kamgam.UIToolkitParticles" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="UnityEngine.UIElements.xsd" namespace="UnityEngine.UIElements" />
+  <xs:simpleType name="ParticleImage_Attractor-Element-Type_Type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VisualElement" />
+      <xs:enumeration value="BindableElement" />
+      <xs:enumeration value="Button" />
+      <xs:enumeration value="Image" />
+      <xs:enumeration value="Label" />
+      <xs:enumeration value="Scroller" />
+      <xs:enumeration value="ScrollView" />
+      <xs:enumeration value="TextField" />
+      <xs:enumeration value="Foldout" />
+      <xs:enumeration value="Slider" />
+      <xs:enumeration value="SliderInt" />
+      <xs:enumeration value="SliderMinMax" />
+      <xs:enumeration value="Toggle" />
+      <xs:enumeration value="ProgressBar" />
+      <xs:enumeration value="DropdownField" />
+      <xs:enumeration value="TextElement" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ParticleImage_Origin_Type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Center" />
+      <xs:enumeration value="TopLeft" />
+      <xs:enumeration value="TopRight" />
+      <xs:enumeration value="BottomRight" />
+      <xs:enumeration value="BottomLeft" />
+      <xs:enumeration value="Element" />
+      <xs:enumeration value="Transform" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ParticleImage_Emitter-Shape_Type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="System" />
+      <xs:enumeration value="BoxFill" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="ParticleImage_Origin-Element-Type_Type">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="VisualElement" />
+      <xs:enumeration value="BindableElement" />
+      <xs:enumeration value="Button" />
+      <xs:enumeration value="Image" />
+      <xs:enumeration value="Label" />
+      <xs:enumeration value="Scroller" />
+      <xs:enumeration value="ScrollView" />
+      <xs:enumeration value="TextField" />
+      <xs:enumeration value="Foldout" />
+      <xs:enumeration value="Slider" />
+      <xs:enumeration value="SliderInt" />
+      <xs:enumeration value="SliderMinMax" />
+      <xs:enumeration value="Toggle" />
+      <xs:enumeration value="ProgressBar" />
+      <xs:enumeration value="DropdownField" />
+      <xs:enumeration value="TextElement" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="ParticleImageType">
+    <xs:complexContent mixed="false">
+      <xs:restriction base="engine:VisualElementType">
+        <xs:attribute default="" name="name" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="enabled" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="view-data-key" type="xs:string" use="optional" />
+        <xs:attribute default="Position" name="picking-mode" type="engine:VisualElement_picking-mode_Type" use="optional" />
+        <xs:attribute default="" name="tooltip" type="xs:string" use="optional" />
+        <xs:attribute default="None" name="usage-hints" type="engine:VisualElement_usage-hints_Type" use="optional" />
+        <xs:attribute default="0" name="tabindex" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="focusable" type="xs:boolean" use="optional" />
+        <xs:attribute default="Inherit" name="language-direction" type="engine:VisualElement_language-direction_Type" use="optional" />
+        <xs:attribute default="" name="data-source" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-path" type="xs:string" use="optional" />
+        <xs:attribute default="" name="data-source-type" type="xs:string" use="optional" />
+        <xs:attribute default="false" name="Add-Attractor" type="xs:boolean" use="optional" />
+        <xs:attribute default="VisualElement" name="Attractor-Element-Type" xmlns:q1="Kamgam.UIToolkitParticles" type="q1:ParticleImage_Attractor-Element-Type_Type" use="optional" />
+        <xs:attribute default="" name="Attractor-Element-Name" type="xs:string" use="optional" />
+        <xs:attribute default="" name="Attractor-Element-Class" type="xs:string" use="optional" />
+        <xs:attribute default="true" name="Play-On-Show" type="xs:boolean" use="optional" />
+        <xs:attribute default="true" name="Restart-On-Show" type="xs:boolean" use="optional" />
+        <xs:attribute default="true" name="Create-Particle-System" type="xs:boolean" use="optional" />
+        <xs:attribute default="Center" name="Origin" xmlns:q2="Kamgam.UIToolkitParticles" type="q2:ParticleImage_Origin_Type" use="optional" />
+        <xs:attribute default="System" name="Emitter-Shape" xmlns:q3="Kamgam.UIToolkitParticles" type="q3:ParticleImage_Emitter-Shape_Type" use="optional" />
+        <xs:attribute default="0" name="Position-X" type="xs:float" use="optional" />
+        <xs:attribute default="0" name="Position-Y" type="xs:float" use="optional" />
+        <xs:attribute default="VisualElement" name="Origin-Element-Type" xmlns:q4="Kamgam.UIToolkitParticles" type="q4:ParticleImage_Origin-Element-Type_Type" use="optional" />
+        <xs:attribute default="" name="Origin-Element-Name" type="xs:string" use="optional" />
+        <xs:attribute default="" name="Origin-Element-Class" type="xs:string" use="optional" />
+        <xs:attribute default="RGBA(1.000, 1.000, 1.000, 1.000)" name="Tint" type="xs:string" use="optional" />
+        <xs:attribute default="50" name="Pixels-Per-Unit" type="xs:int" use="optional" />
+        <xs:attribute default="false" name="Preview-In-Game-View" type="xs:boolean" use="optional" />
+        <xs:attribute default="" name="content-container" type="xs:string" use="optional" />
+        <xs:attribute default="" name="class" type="xs:string" use="optional" />
+        <xs:attribute default="" name="style" type="xs:string" use="optional" />
+        <xs:anyAttribute processContents="lax" />
+      </xs:restriction>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ParticleImage" substitutionGroup="engine:VisualElement" xmlns:q5="Kamgam.UIToolkitParticles" type="q5:ParticleImageType" />
+</xs:schema>
