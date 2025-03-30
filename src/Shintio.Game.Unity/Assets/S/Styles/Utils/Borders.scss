@@ -1,0 +1,28 @@
+﻿.border {
+  border-width: 1px;
+  border-color: var(--s-border-color);
+
+  @each $name, $scale in ("0": 0, "sm": 1, "md": 2, "lg": 4, "xl": 8) {
+    $value: 1px * $scale;
+
+    &-#{$name} {
+      border-width: $value;
+    }
+
+    &-t-#{$name} {
+      border-top-width: $value;
+    }
+
+    &-b-#{$name} {
+      border-bottom-width: $value;
+    }
+
+    &-l-#{$name} {
+      border-left-width: $value;
+    }
+
+    &-r-#{$name} {
+      border-right-width: $value;
+    }
+  }
+}

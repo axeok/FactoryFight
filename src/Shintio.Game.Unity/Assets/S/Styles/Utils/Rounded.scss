@@ -1,0 +1,59 @@
+﻿.rounded {
+  border-radius: 4px;
+
+  &-pill {
+    border-radius: 9999px;
+  }
+
+  &-circle {
+    border-radius: 50%;
+  }
+
+  &-shaped {
+    border-radius: 24px 0;
+  }
+
+  @each $name, $scale in ("0": 0, "sm": 2, "lg": 8, "xl": 24) {
+    $value: 1px * $scale;
+
+    &-#{$name} {
+      border-radius: $value;
+    }
+
+    &-t-#{$name} {
+      border-top-left-radius: $value;
+      border-top-right-radius: $value;
+    }
+
+    &-b-#{$name} {
+      border-bottom-left-radius: $value;
+      border-bottom-right-radius: $value;
+    }
+
+    &-e-#{$name} {
+      border-top-right-radius: $value;
+      border-bottom-right-radius: $value;
+    }
+
+    &-s-#{$name} {
+      border-bottom-left-radius: $value;
+      border-top-left-radius: $value;
+    }
+
+    &-ts-#{$name} {
+      border-top-left-radius: $value;
+    }
+
+    &-te-#{$name} {
+      border-top-right-radius: $value;
+    }
+
+    &-be-#{$name} {
+      border-bottom-right-radius: $value;
+    }
+
+    &-bs-#{$name} {
+      border-bottom-left-radius: $value;
+    }
+  }
+}

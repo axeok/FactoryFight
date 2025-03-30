@@ -1,0 +1,42 @@
+﻿$step: 4px;
+
+@for $i from 0 through 16 {
+  @each $negative, $sign in ("": 1, "n": -1) {
+    $value: $i * $step * $sign;
+    $number: #{$negative}#{$i};
+
+    @each $name, $property in ("m": "margin", "p": "padding") {
+      .#{$name} {
+        &t-#{$number} {
+          #{$property}-top: $value;
+        }
+
+        &b-#{$number} {
+          #{$property}-bottom: $value;
+        }
+
+        &l-#{$number} {
+          #{$property}-left: $value;
+        }
+
+        &r-#{$number} {
+          #{$property}-right: $value;
+        }
+
+        &x-#{$number} {
+          #{$property}-left: $value;
+          #{$property}-right: $value;
+        }
+
+        &y-#{$number} {
+          #{$property}-top: $value;
+          #{$property}-bottom: $value;
+        }
+
+        &a-#{$number} {
+          #{$property}: $value;
+        }
+      }
+    }
+  }
+}

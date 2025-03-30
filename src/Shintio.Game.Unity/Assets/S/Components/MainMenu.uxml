@@ -2,9 +2,9 @@
     <Style src="project://database/Assets/Shintio/Game/Ui/Styles/Index.uss?fileID=7433441132597879392&amp;guid=f473327840a05b542aea8db6264bb115&amp;type=3#Index" />
     <engine:VisualElement name="VisualElement" class="bg-background" style="flex-grow: 1; padding-top: 32px; padding-right: 32px; padding-bottom: 32px; padding-left: 32px;">
         <engine:VisualElement class="bg-surface" style="flex-grow: 1; padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px;">
-            <Shintio.Game.Ui.Components.Button text="Button" />
-            <Shintio.Game.Ui.Components.Button name="Button" text="Primary" class="bg-primary" />
-            <Shintio.Game.Ui.Components.Button text="Error" class="bg-error" />
+            <S.Button text="Играть" class="bg-primary"/>
+            <S.Button text="Настройки"/>
+            <S.Button text="Выйти"/>
         </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>

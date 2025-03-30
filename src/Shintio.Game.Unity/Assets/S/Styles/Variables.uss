@@ -24,4 +24,10 @@
     --s-theme-on-warning: #ffffff;
     --s-theme-on-error: #ffffff;
     --s-theme-on-info: #ffffff;
+    
+    --s-border-color: rgba(151, 151, 159, 0.12);
+    
+    --s-btn-height: 36px;
+    --s-btn-radius: 18px;
+    --s-btn-size: 14px
 }

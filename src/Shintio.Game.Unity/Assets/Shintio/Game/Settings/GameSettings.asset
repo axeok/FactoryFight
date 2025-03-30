@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2e706b7de640d7bcd20fde6d23c534, type: 3}
   m_Name: GameSettings
   m_EditorClassIdentifier: 
-  TestSettings:
-    TestValue: 5
+  Camera:
+    Projection: 0
+    Fov: 60
+  Audio:
+    MasterVolume: 1
+    ClickSound: {fileID: 8300000, guid: ffb159a21c8a04135a5616979c828fab, type: 3}
+    HoverSound: {fileID: 8300000, guid: 32d4b1811dda14a6cb9e059ee8ad17d2, type: 3}

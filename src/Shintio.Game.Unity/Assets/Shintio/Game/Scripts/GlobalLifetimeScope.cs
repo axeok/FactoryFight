@@ -1,6 +1,7 @@
 ﻿using MessagePipe;
 using Shintio.Game.Managers;
 using Shintio.Game.ScriptableObjects;
+using Shintio.Game.Utils;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
@@ -13,6 +14,8 @@ namespace Shintio.Game
 
 		protected override void Configure(IContainerBuilder builder)
 		{
+			Services.SetScope(this);
+			
 			RegisterMessagePipe(builder);
 			RegisterServices(builder);
 

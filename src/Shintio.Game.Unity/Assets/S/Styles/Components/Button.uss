@@ -1,0 +1,36 @@
+:root {
+}
+
+.s-btn {
+    background-color: var(--s-theme-surface);
+    color: var(--s-theme-on-surface);
+    height: var(--s-btn-height);
+    font-size: var(--s-btn-size);
+    border-radius: var(--s-btn-radius);
+    border-width: 1px;
+    border-color: var(--s-border-color);
+}
+
+.s-btn-xs {
+    --s-btn-height: 20px;
+    --s-btn-radius: 10px;
+    --s-btn-size: 10px
+}
+
+.s-btn-sm {
+    --s-btn-height: 28px;
+    --s-btn-radius: 14px;
+    --s-btn-size: 12px
+}
+
+.s-btn-lg {
+    --s-btn-height: 44px;
+    --s-btn-radius: 22px;
+    --s-btn-size: 16px
+}
+
+.s-btn-xl {
+    --s-btn-height: 52px;
+    --s-btn-radius: 26px;
+    --s-btn-size: 18px
+}
